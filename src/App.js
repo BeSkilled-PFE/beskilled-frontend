@@ -2,10 +2,16 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { useEffect } from "react";
 
+var headers = {"Content-Type": "application/json"}
+
 function App() {
   const fetchData = async () => {
-    const res = await fetch("http://localhost:3000/");
-    console.log(res);
+    const res = await fetch("http://localhost:3000/", {
+      method: "GET",
+      mode: "no-cors",
+      headers: headers
+    });
+    console.log(res)
   };
 
   useEffect(() => {
