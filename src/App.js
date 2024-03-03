@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from './components/header/Header.js';
-import './components/header/Header.css';
+import Footer from './components/footer/Footer.js';
 
 var headers = {"Content-Type": "application/json"}
 
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* Autres composants et contenu ici */}
+      <Footer />
     </div>
   );
 }
